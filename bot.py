@@ -41,7 +41,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Bot token from BotFather
-TOKEN = "YOUR_BOT_TOKEN_HERE"
+TOKEN = "7550835247:AAHwcaJp0RSgwPpUOD-G1gDOnjsz0Y7o0-0"
 
 # Conversation states
 SETTINGS, RENAME, UPLOAD_MODE, AUDIO_QUALITY, VIDEO_QUALITY = range(5)
