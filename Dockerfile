@@ -1,12 +1,14 @@
 # Use official Python image
 FROM python:3.11-slim-bullseye
 
-# Install system dependencies
-RUN apt-get update && \
+# Install system dependencies with non-free repository
+RUN echo "deb http://deb.debian.org/debian bullseye non-free" >> /etc/apt/sources.list && \
+    apt-get update && \
     apt-get install -y \
     unrar \
     p7zip-full \
     ffmpeg \
+    rar \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
